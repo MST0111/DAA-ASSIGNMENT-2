@@ -1,0 +1,4 @@
+bottleneck is 1
+bottleneck is 2
+bottleneck is 3
+Time taken by the code: 4125 microseconds

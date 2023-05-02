@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DAA Report</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			font-size: 14px;
+			line-height: 1.5;
+		}
+		
+		h1 {
+			font-size: 28px;
+			margin-bottom: 20px;
+		}
+		
+		h2 {
+			font-size: 24px;
+			margin-top: 30px;
+			margin-bottom: 15px;
+		}
+		
+		table {
+			width: 100%;
+			border-collapse: collapse;
+			margin-bottom: 30px;
+		}
+		
+		table th, table td {
+			padding: 10px;
+			border: 1px solid #ccc;
+			text-align: left;
+		}
+		
+		table th {
+			background-color: #eee;
+			font-weight: bold;
+		}
+		
+		ul {
+			margin-top: 0;
+			margin-bottom: 20px;
+		}
+		
+		li {
+			margin-bottom: 10px;
+		}
+        img{
+            height: 300px;
+            width: 350px;
+        }
+        .image {
+			flex: 1;
+			margin: 10px;
+			position: relative;
+		}
+        td,th{
+            font-size: 25px;
+        }
+		
+		.caption {
+
+
+			background-color: rgba(0, 0, 0, 0.5);
+			color: white;
+			padding: 0px;
+			text-align: center;
+		}
+        .container {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+            margin-left:150px;
+            margin-right: 150px;
+		}
+	</style>
+</head>
+<body>
+	<h1 style="text-align: center;">CS F364 - Design and Analysis of Algorithms</h1>
+	
+	<h2 style="text-align: center;">Assignment - II</h2>
+	<p style="text-align: center;font-size: 20px;">The line fitting dynamic programming algorithm (segmented least squares algorithm)</p>
+	
+	<h2 style="text-align: center;">Group Members</h2>
+	<table style="width: 80%;margin-left: auto;margin-right: auto;">
+		<thead>
+			<tr>
+				<th>Name</th>
+				<th>ID</th>
+		
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>T.Praneeth Bhargav</td>
+				<td>2020A7PS1299H</td>
+	
+			</tr>
+			<tr>
+				<td>N.Sai Charan</td>
+				<td>2020A7PS0182H</td>
+
+			</tr>
+			<tr>
+				<td>M.Sree Theerdha</td>
+				<td>2020A7PS1889H</td>
+
+			</tr>
+            <tr>
+                <td>S.V.S.Rahul</td>
+				<td>2020A7PS0204H</td>
+				
+
+			</tr>
+		</tbody>
+	</table>
+
+    <div class="box" style="width: 80%;margin: auto;">
+        <h2 style="text-align: center;">Brief Introduction</h2>
+        <p style="font-size: 25px;">
+            The line fitting dynamic programming algorithm (segmented least squares algorithm) also known as piece-wise algorithm is implemented here. The above algorithm is a line fitting algorithm whose main focus lies in finding least or optimal error values after segmenting points and no of segmentations will be equal to number of lines formed. In this algorithm error is calculated for segments and the optimal value is found using recursion based on the error and then finding it's extreme value.  In this algorithm we can have any number of segments which can give us the best OPT for all the points.  
+            <br>
+            The algorithm is a dynamic programming algorithm which outputs no of segments and equations of the lines formed by these segments . We have set the slope to max possible integer value whenever we encounter a line with infinity slope. This is one of the main problems encountered while implementing the algorithm, the above solution will also help with visualization of algorithm.
+        </p>
+
+    </div>
+	
+
+    <div style="height: 100px;text-align: center;margin-top: 150px;">
+        <h2>Timing Plots</h2>
+        <h3>With number of points ranging from 6 to 250 </h3>
+    </div>
+	<div class="container">
+		<div class="image">
+			<img src="Timing.png" alt="Image 1">
+			<div class="caption">Total Time</div>
+	</div>
+
+    <div style="display: flex;justify-content: center;align-items: center;margin-top: 50px;">
+        <img src="./table.png" style="height:440px;width: 740px;" alt="">
+    </div>
+
+
+
+    <div style="height: 100px;text-align: center;margin-top: 150px;">
+        <h2>Results of the Algorithm</h2>
+    </div>
+
+    <h2 style="margin-left: 180px;">Number of points : 6</h2>
+	<div class="container">
+		<div class="image">
+			<img src="2a.png" alt="Image 1">
+			<div class="caption">Initial Scatter plot</div>
+		</div>
+		<div class="image">
+			<img src="2b.png" alt="Image 2">
+			<div class="caption">After Segmentation</div>
+		</div>
+	</div>
+
+    <h2 style="margin-left: 180px;">Number of points : 50</h2>
+	<div class="container">
+		<div class="image">
+			<img src="3a.png" alt="Image 1">
+			<div class="caption">Initial Scatter plot</div>
+		</div>
+		<div class="image">
+			<img src="3b.png" alt="Image 2">
+			<div class="caption">After Segmentation</div>
+		</div>
+	</div>
+
+    <h2 style="margin-left: 180px;">Number of points : 250</h2>
+	<div class="container">
+		<div class="image">
+			<img src="1a.png" alt="Image 1">
+			<div class="caption">Initial Scatter plot</div>
+		</div>
+		<div class="image">
+			<img src="1b.png" alt="Image 2">
+			<div class="caption">After Segmentation</div>
+		</div>
+	</div>
+
+	
+    <div style="height: 200px;">
+
+    </div>
+</body>
+</html>
